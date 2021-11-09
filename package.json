@@ -1,0 +1,22 @@
+{
+  "name": "bd-phone-number-validator",
+  "version": "1.0.0",
+  "description": "bd-phone-number-validator is a npm package designed to validate phone number of bangladesh.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MHNahib/bd-phone-number-validator.git"
+  },
+  "keywords": [
+    "bd"
+  ],
+  "author": "M. H. Nahib",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/MHNahib/bd-phone-number-validator/issues"
+  },
+  "homepage": "https://github.com/MHNahib/bd-phone-number-validator#readme"
+}
