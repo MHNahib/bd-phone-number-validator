@@ -1,13 +1,22 @@
 {
   "name": "bd-phone-number-validator",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "bd-phone-number-validator is a npm package designed to validate phone number of bangladesh. It can validates any Bangladeshi cell phone numbers and show all the information about the phone numbers operator",
-  "main": "index.js",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
   "publishConfig": {
     "registry": "https://npm.pkg.github.com/@MHNahib"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "tsc",
+    "test": "jest",
+    "test:coverage": "jest --coverage",
+    "lint": "eslint src",
+    "lint:fix": "eslint src --fix",
+    "prepublishOnly": "npm run build"
   },
   "repository": {
     "type": "git",
@@ -31,5 +40,15 @@
   "bugs": {
     "url": "https://github.com/MHNahib/bd-phone-number-validator/issues"
   },
-  "homepage": "https://github.com/MHNahib/bd-phone-number-validator#readme"
+  "homepage": "https://github.com/MHNahib/bd-phone-number-validator#readme",
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "@types/jest": "^30.0.0",
+    "@types/node": "^26.0.0",
+    "eslint": "^10.5.0",
+    "jest": "^30.4.2",
+    "ts-jest": "^29.4.11",
+    "typescript": "^6.0.3",
+    "typescript-eslint": "^8.61.1"
+  }
 }
